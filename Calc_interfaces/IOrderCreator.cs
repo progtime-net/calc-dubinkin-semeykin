@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Calc_interfaces
 {
-    internal interface IOrderCreator
+    public interface IOrderCreator
     {
+        List<Step> GetSteps(string source);
     }
 }
