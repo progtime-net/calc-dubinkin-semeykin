@@ -1,11 +1,12 @@
-﻿namespace Calc_interfaces;
+﻿using Calc_interfaces.Actions;
+namespace Calc_interfaces;
 
 public class ActionExecuter : IActionExecuter
 {
     private Sum sum = new Sum();
-    private Subtract sub = new Subtract();
+    private Subtraction sub = new Subtraction();
     private Multiplication mul = new Multiplication();
-    private Divsion div = new Divsion();
+    private Division div = new Division();
     
     public double PerformActions(List<Step> steps)
     {
