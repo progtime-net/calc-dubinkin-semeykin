@@ -16,16 +16,16 @@ public class ActionExecuter : IActionExecuter
             switch (step.Operation)
             {
                 case "+":
-                    sum.Operation(result, step.Obj);
+                    result = sum.Operation(result, step.Obj);
                     break;
                 case "-":
-                    sub.Operation(result, step.Obj);
+                    result = sub.Operation(result, step.Obj);
                     break;
                 case "*":
-                    mul.Operation(result, step.Obj);
+                    result = mul.Operation(result, step.Obj);
                     break;
                 case "/":
-                    div.Operation(result, step.Obj);
+                    result = div.Operation(result, step.Obj);
                     break;
             }
         }
