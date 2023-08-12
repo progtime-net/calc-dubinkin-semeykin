@@ -8,7 +8,7 @@ namespace Calc_interfaces
 {
     public class Step
     {
-        public int Obj { get; set; }
+        public double Obj { get; set; }
         public string Operation { get; set; }
     }
 }

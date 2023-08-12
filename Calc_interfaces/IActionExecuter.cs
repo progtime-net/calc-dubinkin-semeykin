@@ -8,6 +8,6 @@ namespace Calc_interfaces
 {
     internal interface IActionExecuter
     {
-        int PerformActions(List<Step> steps);
+        double PerformActions(List<Step> steps);
     }
 }
